@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    min-height: 100vh;
+}
+
+#navbar{
+    background-color: black;
+    font-size: 2.3rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    color: white;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4rem;
+}
+
+ul>li{
+    list-style: none;
+}
+
+#recommended{
+    text-align: center;
+    min-height: 60vh;
+    background-image: url('./img/banner/b2.jpg');
+}
+
+#recommended-images{
+    display: flex;
+    justify-content: space-around;
+}
+
+#recommended-items > h1{
+    color: white;
+    font-size: 3.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5rem;
+}
+
+#formen{
+    padding: 3rem;
+    background-image: url('./img/banner/b10.jpg');
+    text-align: center;
+    min-height: 60vh;
+}
+
+#forwomen{
+    background-image: url('./img/banner/b18.jpg');
+    text-align: center;
+    min-height: 60vh;
+    padding: 3rem;
+}
+
+#footer{
+    background-color: black;
+    height: 40vh;
+}
+
+#footer > h1{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+#contact > ul {
+    font-size: 2rem;
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#recommended-images{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+#recommended-images > img{
+    width: 20rem;
+    border-radius: 2rem;
+}
+
+
+#feature{
+    background-color: white;
+    margin-bottom: 5rem;
+}
+
+#formendiv{
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: space-around;
+    gap: 5rem;
+}
+
+
+#formendiv > img{
+    width: 20rem; 
+    border-radius: 2rem; 
+}
+
+
+#forwomendiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#forwomendiv > img {
+    width: 20rem;
+    border-radius: 2rem;
+}
+
+
+#footer{
+    color: white;
+    font-size: 3.7rem;
+}
+
+#formen > h1, #forwomen > h1 {
+    font-size: 3.5rem;
+    color: white;
+    margin-bottom: 5rem;
+}
