@@ -1,142 +1,196 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 
-body{
-    min-height: 100vh;
+body {
+  min-height: 100vh;
 }
 
-#navbar{
-    background-color: black;
-    font-size: 2.3rem;
-    display: flex;
-    justify-content: space-around;
-    padding: 2rem;
-    color: white;
+#navbar {
+  background-color: black;
+  font-size: 2.3rem;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  color: white;
 }
 
-ul{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 4rem;
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 4rem;
 }
 
-ul>li{
-    list-style: none;
+ul > li {
+  list-style: none;
+  cursor: pointer;
 }
 
-#recommended{
-    text-align: center;
-    min-height: 60vh;
-    background-image: url('./img/banner/b2.jpg');
+#recommended {
+  min-height: 70vh;
+  background-image: url("./img/banner/b18.jpg");
+  background-size: cover;
+  padding: 2rem;
+  backdrop-filter: blur(0.2rem);
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
-#recommended-images{
-    display: flex;
-    justify-content: space-around;
+#recommended-images {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 70rem;
 }
 
-#recommended-items > h1{
-    color: white;
-    font-size: 3.5rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-bottom: 5rem;
+#recommended-items > h1 {
+  color: #0c134f;
+  font-size: 3.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 5rem;
 }
 
-#formen{
-    padding: 3rem;
-    background-image: url('./img/banner/b10.jpg');
-    text-align: center;
-    min-height: 60vh;
+#formen {
+  padding: 3rem;
+  background-image: url("./img/about/banner.png");
+  min-height: 60vh;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-#forwomen{
-    background-image: url('./img/banner/b18.jpg');
-    text-align: center;
-    min-height: 60vh;
-    padding: 3rem;
+#formendiv {
+  max-width: 100rem;
+  margin: auto;
 }
 
-#footer{
-    background-color: black;
-    height: 40vh;
+#forwomen {
+  background-image: url("./img/banner/b17.jpg");
+  min-height: 60vh;
+  padding: 3rem;
+  background-size: cover;
+  background-position: right top;
+  background-repeat: space;
 }
 
-#footer > h1{
-    text-align: center;
-    margin-bottom: 3rem;
+#footer {
+  padding: 3rem;
+  background-color: #e1d4bb;
+  min-height: 40vh;
+}
+
+#footer > h1 {
+  text-align: start;
+  margin-bottom: 3rem;
 }
 
 #contact > ul {
-    font-size: 2rem;
-    display: flex;
-    flex: auto;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  font-size: 2rem;
+  display: flex;
+  flex: auto;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
 }
 
-a{
-    text-decoration: none;
-    color: white;
+a {
+  text-decoration: none;
+  color: #0c134f;
 }
 
-#recommended-images{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4rem;
+#recommended-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
 }
 
-#recommended-images > img{
-    width: 20rem;
-    border-radius: 2rem;
+#recommended-images > img {
+  width: 20rem;
+  border-radius: 2rem;
 }
 
-
-#feature{
-    background-color: white;
-    margin-bottom: 5rem;
+#feature {
+  background-color: white;
+  margin-bottom: 5rem;
 }
 
-#formendiv{
-    display: flex;
-    flex-wrap: wrap;  
-    justify-content: space-around;
-    gap: 5rem;
+#formendiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 5rem;
 }
 
-
-#formendiv > img{
-    width: 20rem; 
-    border-radius: 2rem; 
+#formendiv > img {
+  width: 20rem;
+  border-radius: 2rem;
 }
 
-
-#forwomendiv{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+#forwomendiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 70rem;
 }
 
 #forwomendiv > img {
-    width: 20rem;
-    border-radius: 2rem;
+  width: 20rem;
+  border-radius: 2rem;
 }
 
-
-#footer{
-    color: white;
-    font-size: 3.7rem;
+#footer {
+  color: #0c134f;
+  font-size: 3.7rem;
 }
 
-#formen > h1, #forwomen > h1 {
-    font-size: 3.5rem;
-    color: white;
-    margin-bottom: 5rem;
+#formen > h1 {
+  color: white;
+  font-size: 3.5rem;
+  margin-bottom: 5rem;
+}
+#forwomen > h1 {
+  color: #0c134f;
+  font-size: 3.5rem;
+  margin-bottom: 5rem;
+}
+
+.showallbutton {
+  font-size: 2.5rem;
+  display: block;
+  margin: auto;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border: 0.3rem solid black;
+  border-radius: 0.2rem;
+  background-color: #07120f;
+  color: white;
+}
+
+.itempage {
+  background-color: red;
+}
+
+img:hover {
+  cursor: pointer;
+  scale: 1.2;
+  transform: rotate(1deg);
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+#item-image{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    flex-direction: column;
+}
+
+#item-image > img{
+    width: 40rem;
+    height: 40rem;
 }
