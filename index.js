@@ -7,6 +7,10 @@ const header = document.getElementById("header");
 const images = document.querySelectorAll("img");
 const item_page = document.getElementById("item-page");
 const item_image = document.getElementById("item-image");
+const increase = document.getElementById("increment");
+const decrease = document.getElementById("decrement");
+let quan = document.getElementById("quan");
+const cart = [];
 
 const showSelected = (id) => {
   sections.forEach((section) => {
@@ -49,11 +53,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
   item_page.style.display = "none";
 
+  // console.log(images);
   images.forEach((image) => {
     image.addEventListener("click", () => {
+      let quantity = 0;
       item_page.style.display = "block";
       item_image.innerHTML += `<h1>${image.alt}</h1>`;
       item_image.innerHTML += `${image.outerHTML}`;
+      increase.addEventListener("click", () => {
+        quantity++;
+        cart.push(image.alt);
+        quan.innerHTML = quantity;
+      });
+      decrease.addEventListener("click", () => {
+        quantity--;
+        cart.pop(image.alt);
+        if (quan.innerHTML == "0") {
+          quantity = 0;
+        }
+        quan.innerHTML = quantity;
+      });
     });
     image.addEventListener("click", () => {
       main.style.display = "none";
@@ -66,11 +85,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     item_image.addEventListener("mouseenter", () => {
       image.style.border = "1px solid red";
-    })
-    
+    });
+
     item_image.addEventListener("mouseleave", () => {
       image.style.border = "none";
     });
   });
 });
-
