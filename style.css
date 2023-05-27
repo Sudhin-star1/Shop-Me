@@ -194,3 +194,26 @@ img:hover {
     width: 40rem;
     height: 40rem;
 }
+
+#main-buttons{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vh;
+}
+
+#buttons{
+  display: flex;
+  justify-content: center;
+}
+
+#quantity{
+  display: flex;
+  justify-content: center;
+}
+
+
+button{
+  width: 3rem;
+  font-size: 1.2rem;
+  margin: 0.2rem;
+}
