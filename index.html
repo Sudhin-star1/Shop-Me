@@ -8,93 +8,39 @@
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <section id="header">
-      <nav id="navbar">
-        <ul>
-          <li data-name="formen" id="button-men">Men</li>
-          <li data-name="forwomen" id="button-women">Women</li>
-          <li data-name="accessories" id="button-accessories">Accessories</li>
-        </ul>
-        <input placeholder="Search product here" name="search" id="search" />
-      </nav>
-    </section>
-    <div id="main">
-      <section id="recommended">
-        <div id="recommended-items">
-          <h1>Recommended For You</h1>
-          <div id="recommended-images">
-            <img src="./img/products/n1.jpg" alt="Full sleeved shirts" />
-            <img src="./img/products/n2.jpg" alt="Full sleeved shirts" />
-            <img src="./img/products/n3.jpg" alt="Full sleeved shirts" />
+    <div id="index-main" style="background-image: url('./img/hero4.png')">
+      <section id="header">
+        <nav id="navbar">
+          <div class="nav-buttons">
+            <button id="home"><a href="index.html">Home</a></button>
+            <button id="home"><a href="shop.html">Shop</a></button>
+            <button id="home"><a href="about.html">About</a></button>
+            <button id="home"><a href="contact.html">Contact</a></button>
           </div>
-        </div>
+          <input placeholder="Search product here" name="search" id="search" />
+        </nav>
       </section>
-      <section id="formen">
-        <h1>For Men</h1>
-        <div id="formendiv">
-          <img src="./img/products/f1.jpg" alt="Short sleeved shirts" />
-          <img src="./img/products/f2.jpg" alt="Short sleeved shirts" />
-          <img src="./img/products/f3.jpg" alt="Short sleeved shirts" />
-          <img src="./img/products/f4.jpg" alt="Short sleeved shirts" />
-          <img src="./img/products/f5.jpg" alt="Short sleeved shirts" />
-          <img src="./img/products/f6.jpg" alt="Short sleeved shirts" />
-          <img src="./img/products/n4.jpg" alt="Short sleeved shirts" />
-          <img src="./img/products/n5.jpg" alt="Short sleeved shirts" />
-          <img src="./img/products/n6.jpg" alt="Short sleeved shirts" />
-          <img src="./img/products/n7.jpg" alt="Short sleeved shirts" />
-          <img src="./img/products/n8.jpg" alt="Short sleeved shirts" />
-          <img src="./img/Tshirts/product1.jpg" alt="Tshirt" />
-          <img src="./img/Tshirts/product2.jpg" alt="Tshirt" />
-          <img src="./img/Tshirts/product3.jpg" alt="Tshirt" />
-          <img src="./img/Tshirts/product4.jpg" alt="Tshirt" />
-          <img src="./img/Tshirts/product5.jpg" alt="Tshirt" />
-          <img src="./img/Tshirts/product6.jpg" alt="Tshirt" />
-          <img src="./img/Tshirts/product7.jpg" alt="Tshirt" />
-          <img src="./img/Tshirts/product8.jpg" alt="Tshirt" />
-        </div>
-      </section>
-      <section id="forwomen">
-        <h1>For Women</h1>
-        <div id="forwomendiv">
-          <img src="./img/products/f7.jpg" alt="Leggings" />
-          <img src="./img/products/f8.jpg" alt="top" />
-        </div>
-      </section>
-      <section id="footer">
-        <h1>Contact Us</h1>
-        <div id="contact">
-          <ul>
-            <li>Sudhinkarki20@gmail.com</li>
-            <li>
-              <a href="https://www.linkedin.com/in/sudhin-karki-bbb572237/"
-                >LinkedIn</a
-              >
-            </li>
-            <li>
-              <a href="https://www.facebook.com/sudheen.karkee/">FaceBook</a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/sudheenkarkee/">Instagram</a>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </div>
-
-    <div id="item-page">
-      <div id="item-image"></div>
-      <div id="main-buttons">
-        <div id="buttons">
-          <button id="increment">+</button>
-          <h2>Add to cart</h2>
-          <button id="decrement">-</button>
-        </div>
-        <div id="quantity">
-          <h2>Quantity:</h2>
-          <h2 id="quan">0</h2>
-        </div>
+      <div id="main">
+        <section class="hero">
+          <h1 class="hero-heading">
+            Unleash Your Fashion with <br />
+            Shop-Me
+          </h1>
+          <p class="hero-text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam
+            tempore, hic, vel modi officia quae sed placeat corrupti vitae,
+            harum odio. Libero, dolor rem tenetur cumque provident ad voluptatem
+            necessitatibus.
+          </p>
+          <button
+            id="shop-now"
+            style="background-image: url('./img/button.png')"
+          >
+            Shop Now
+          </button>
+        </section>
       </div>
+      <script src="index.js"></script>
     </div>
-    <script src="index.js"></script>
   </body>
 </html>
